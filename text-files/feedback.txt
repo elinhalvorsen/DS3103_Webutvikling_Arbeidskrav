@@ -1,0 +1,51 @@
+* Mark og Damian sin feedback til oss *
+3-5 good things in the solution code
+1. Semantisk kode
+2. Fint strukturert
+3. Ryddig og fine kommentarer
+4. Ingen kode-repetisjon
+
+3-5 things that can be improved, and/or tips etc.
+1. Kanskje litt lange navn på variabler og funksjoner
+2. Ser ut som det kan være noen unødvendige divs
+3. Console.logs i koden
+
+* Vår feedback til Mark og Damian *
+3-5 good things in the solution code
+1. God semantikk. Ved bruk av section, article, nav osv.
+2. Godt kommentert i html. Ser tydelig hva ting er.
+3. Forklarende navn på ting.
+4. Fint å få samlet template literal i en funksjon
+
+3-5 things that can be improved, and/or tips etc.
+1. Kanskje litt lite kommentarer i gatheringArmy.js
+2. Kanskje litt lange template literals. Kunne kanskje stykka det opp litt mer for oversikt. Litt dårlig struktur
+3. dropp const INIT (trenger bare parantesene)
+
+------------------------------------------------------------------------------------------------------------------------------------------
+* Marie og Ardit sin feedback til oss *
+3-5 good things in the solution code
+1. Gode og forklarende navn på funksjoner/variabler.
+2. Oversiktlig js-kode, først hentes elementer deretter funksjoner!
+3. Bra semantikk: header, nav, main, section, article osv.
+4. Lite repetisjon, god bruk av parametere.
+5. God bruk av tabs/spaces og enter, i html og js for ryddig kode, lett å få overblikk.
+
+3-5 things that can be improved, and/or tips etc.
+1. Anbefaler å flytte localStorage til modul, for å unngå unødvendig repitasjon av kode.
+2. showAllanimalsAndMachines burde ha stor A på Animal - camelCasing.
+3. Kunne vært flere kommentarer inne i selve funksjonene, som forklarer mer.
+
+
+* Vår feedback til Marie og Ardit *
+3-5 good things in the solution code
+1. Godt kommentert i koden, gode beskrivelser av hva ting er
+2. God kodestruktur og semantikk ved bruk av section, article, nav osv
+3. Fint bruk av parametere.
+4. Lite repetisjon av kode.
+5. Samlet funksjoner som gjør noe av det samme for de forskjellige moduelen
+
+3-5 things that can be improved, and/or tips etc.
+1. På output-section: war-machines-and-animals-product-section og warrior-product-section, kunne kanskje BEM vært brukt. Med __section på slutten.
+2. Gode forklarende navn på funksjoner, men kanskje litt lange
+3. console.log i koden på getButton funksjonen

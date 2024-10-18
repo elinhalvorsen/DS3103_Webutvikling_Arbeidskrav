@@ -1,0 +1,95 @@
+/* ---- Bakgrunnsfarge på alle sidene ---- */
+body {
+  background-color: rgba(248, 221, 212, 0.938);
+}
+
+/* ---- Styling av navigasjons bar og oversikt over ressursene ----  */
+
+#navbar {
+  background-color: #856054;
+}
+
+#resource-amounts {
+  background-color: rgb(72, 118, 65);
+  color: white;
+}
+
+/* ---- Posisjonering og gridsystemet til bildene på getting-resources.html ---- */
+.container__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  padding-top: 20px;
+}
+
+@media (width < 700px) {
+  .container__content {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ---- Styling av bilder ---- */
+
+#woods-image {
+  cursor: url("/images/axe-cursor.png"), auto;
+}
+
+#mine-image {
+  cursor: url("/images/pickaxe-cursor.png"), auto;
+}
+
+#mine-image,
+#woods-image {
+  opacity: 0.9;
+}
+
+#woods-image:hover,
+#mine-image:hover {
+  opacity: 1;
+  height: 101%;
+  width: 101%;
+}
+
+#warrior__image {
+  height: 250px;
+}
+
+#animal-and-machine__image {
+  height: 150px;
+}
+
+#wood,
+#metal,
+#gold {
+  width: 6%;
+}
+
+.get-resource-image {
+  width: 100%;
+  border-radius: 50rem;
+}
+
+.resources {
+  max-width: 50px;
+  max-height: 50px;
+}
+
+/* ---- Styling av knapper ---- */
+.btn {
+  color: white;
+  background-color: #9f796d;
+}
+.btn:hover {
+  background-color: #6e4336;
+  color: white;
+}
+
+.btn__show-all {
+  background-color: rgba(225, 109, 50, 0.914);
+  color: white;
+  border-radius: 7px;
+  border: none;
+}
+.btn__show-all:hover {
+  background-color: rgba(147, 42, 8, 0.934);
+}

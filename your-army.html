@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Your army</title>
+        <!-- Favicon -->
+        <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+        <!-- Bootstrap -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+        <!-- CSS-styling -->
+        <link rel="stylesheet" href="css/main.css" />
+        <!-- Font Awesome -->
+        <script
+            defer
+            src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/js/all.min.js"
+        ></script>
+        <!-- Javascript -->
+        <script type="module" src="scripts/your-army.js"></script>
+        <script type="module" src="scripts/getting-resources.js"></script>
+    </head>
+    <!--------------------------------------------------------------------------------->
+    <body>
+        <header>
+            <!-- NAVIGASJONSBAR : Helt lik på alle HTML-sidene -->
+            <nav
+                id="navbar"
+                class="navbar navbar-expand-lg navbar-dark text-white fixed-top"
+            >
+                <div class="container-fluid">
+                    <div class="navbar-header pt-1">
+                        <h3>
+                            <i class="fa-solid fa-dragon"></i> ArmiesOfZondor
+                        </h3>
+                    </div>
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbar"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbar">
+                        <!-- Liste over linkene til de ulike sidene-->
+                        <ul class="navbar-nav ms-auto justify-content-end">
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link text-white"
+                                    href="gathering-army.html"
+                                    ><i class="fa-solid fa-house"></i> Home
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link text-white"
+                                    href="getting-resources.html"
+                                    >Get Resources
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link text-white"
+                                    href="your-army.html"
+                                >
+                                    Your Army
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!----------------------------------------------------------------------------------->
+
+        <div class="container pt-5">
+            <main>
+                <!-- OVERSIKT OVER RESSURSENE : Helt lik på alle HTML-sidene. -->
+                <section
+                    class="row text-center mt-5 pt-3 shadow rounded"
+                    id="resource-amounts"
+                >
+                    <article class="col-12 col-md-4 col-lg-4">
+                        <img
+                            class="resources"
+                            src="images/gold-coin.png"
+                            alt="gull"
+                        />
+                        <p class="mt-2" id="gold-amount">0</p>
+                    </article>
+                    <article class="col-12 col-md-4 col-lg-4">
+                        <img
+                            class="resources"
+                            src="images/metal.png"
+                            alt="metall"
+                        />
+                        <p class="mt-2" id="metal-amount">0</p>
+                    </article>
+                    <article class="col-12 col-md-4 col-lg-4">
+                        <img
+                            class="resources"
+                            src="images/wood.png"
+                            alt="treverk"
+                        />
+                        <p class="mt-2" id="wood-amount">0</p>
+                    </article>
+                </section>
+
+                <!-- Søke etter det du har kjøpt av krigere, dyr og maskiner -->
+                <section class="row mt-2" id="choose-resource">
+                    <article>
+                        <p class="text-muted fs-4 fst-italic">
+                            Say hello to Your Army. You may either choose to
+                            search for a specific member/asset or to show your
+                            entire army. Want to expand? Get to work, collect
+                            your resources and invest.
+                        </p>
+                    </article>
+                    <article class="d-flex justify-content-between">
+                        <div>
+                            <input id="input" type="text" />
+                            <button class="btn" id="input__btn">
+                                Search in Your Army
+                            </button>
+                        </div>
+                        <button class="btn__show-all" id="show-inventory__btn">
+                            Show all of Your Army
+                        </button>
+                    </article>
+                </section>
+
+                <!-- Her er oversikten m/tekst for krigerne du kan kjøpe -->
+                <section class="row">
+                    <article class="col-12 col-md-6 col-lg-4">
+                        <h3 class="mt-4">
+                            Warriors <i class="fa-solid fa-medal"></i>
+                        </h3>
+                    </article>
+                </section>
+                <!-- Her genereres alle krigerne fra gathering-army.js -->
+                <section class="row pb-5 g-3" id="output__warriors"></section>
+
+                <!-- Her er overskriften m/tekst for dyr og maskiner du kan kjøpe -->
+                <section class="row">
+                    <article class="col-12 col-md-6 col-lg-4">
+                        <h3>
+                            Animals and machines
+                            <i class="fa-solid fa-wrench"></i>
+                        </h3>
+                    </article>
+                </section>
+                <!-- Her genereres Animals and Machines fra gathering-army.js -->
+                <section
+                    class="row pb-5 g-3"
+                    id="output__animals_and_machines"
+                ></section>
+            </main>
+        </div>
+
+        <!------------------------------------------------------------------------------------>
+
+        <!-- Bootstrap -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>

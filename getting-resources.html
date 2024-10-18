@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Get resources</title>
+        <!-- Favicon -->
+        <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+        <!-- Bootstrap-->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+        <!-- CSS-styling -->
+        <link rel="stylesheet" href="css/main.css" />
+        <!-- Font Awesome -->
+        <script
+            defer
+            src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/js/all.min.js"
+        ></script>
+        <!-- Javascript -->
+        <script type="module" src="scripts/getting-resources.js"></script>
+    </head>
+    <!--------------------------------------------------------------------------------->
+    <body>
+        <header>
+            <!-- NAVIGASJONSBAR : Helt lik på alle HTML-sidene -->
+            <nav
+                id="navbar"
+                class="navbar navbar-expand-lg navbar-dark text-white fixed-top"
+            >
+                <div class="container-fluid">
+                    <div class="navbar-header pt-1">
+                        <h3>
+                            <i class="fa-solid fa-dragon"></i> ArmiesOfZondor
+                        </h3>
+                    </div>
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbar"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbar">
+                        <!-- Liste over linkene til de ulike sidene-->
+                        <ul class="navbar-nav ms-auto justify-content-end">
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link text-white"
+                                    href="gathering-army.html"
+                                    ><i class="fa-solid fa-house"></i> Home
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link text-white"
+                                    href="getting-resources.html"
+                                    >Get Resources
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link text-white"
+                                    href="your-army.html"
+                                >
+                                    Your Army
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!----------------------------------------------------------------------------------->
+
+        <div class="container pt-5">
+            <main>
+                <!-- OVERSIKT OVER RESSURSENE : Helt lik på alle HTML-sidene. -->
+                <section
+                    class="row text-center mt-5 pt-3 shadow rounded"
+                    id="resource-amounts"
+                >
+                    <article class="col-12 col-md-4 col-lg-4">
+                        <img
+                            class="resources"
+                            src="images/gold-coin.png"
+                            alt="gull"
+                        />
+                        <p class="mt-2" id="gold-amount">0</p>
+                    </article>
+                    <article class="col-12 col-md-4 col-lg-4">
+                        <img
+                            class="resources"
+                            src="images/metal.png"
+                            alt="metall"
+                        />
+                        <p class="mt-2" id="metal-amount">0</p>
+                    </article>
+                    <article class="col-12 col-md-4 col-lg-4">
+                        <img
+                            class="resources"
+                            src="images/wood.png"
+                            alt="treverk"
+                        />
+                        <p class="mt-2" id="wood-amount">0</p>
+                    </article>
+                </section>
+
+                <!-- Her er bildene som man kan trykke på og hente ut ressurser.  -->
+                <section>
+                    <article>
+                        <!-- Overskrift -->
+                        <h3 class="text-success-emphasis mt-4">
+                            Get resources <i class="fa-solid fa-hammer"></i>
+                        </h3>
+                        <!-- Informasjon om gruven og skogen -->
+                        <p class="text-muted fs-4">
+                            Deep within the heart of ArmiesOfZondor lies
+                            <span class="fst-italic text-success-emphasis"
+                                >Mines of Thiarta</span
+                            >
+                            and
+                            <span class="fst-italic text-success-emphasis"
+                                >Woods of Ghalduz</span
+                            >. Every swing of your pickaxe and every felled
+                            tree, brings you one step closer to gathering your
+                            army and claiming victory on the battlefield.
+                            <br />
+                            <br />
+                            <span class="fst-italic"
+                                >May the Norse Gods guide you on this legendary
+                                journey. Skål!</span
+                            >
+                        </p>
+                    </article>
+                    <!-- Denne er stylet med vanlig grid i main.css. Ikke  brukt Bootstrap -->
+                    <article class="container__content">
+                        <!-- Bilde av gruve -->
+                        <img
+                            id="mine-image"
+                            class="get-resource-image shadow"
+                            src="images/mines-of-thiartha.jpg"
+                            alt="Mines of Thiartha"
+                        />
+                        <!-- Bilde av skog -->
+                        <img
+                            id="woods-image"
+                            class="get-resource-image shadow"
+                            src="images/woods-of-ghalduz.png"
+                            alt="Woods of Ghalduz"
+                        />
+                    </article>
+                </section>
+            </main>
+        </div>
+
+        <!------------------------------------------------------------------------------------>
+
+        <!-- Bootstrap -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>
